@@ -27788,8 +27788,8 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
     window.addEventListener('resize', this.handleResize.bind(this));
     this.setState({ isLoading: false });
     const epsiodesRef = __WEBPACK_IMPORTED_MODULE_6__firebase__["a" /* default */].database().ref('eps');
-    const storageRef = __WEBPACK_IMPORTED_MODULE_6__firebase__["a" /* default */].storage();
-    var testStor = storageRef.refFromURL("gs://podscript-214820.appspot.com/test/Screen Shot 2018-09-22 at 4.40.16 PM.png");
+    const storage = __WEBPACK_IMPORTED_MODULE_6__firebase__["a" /* default */].storage();
+    var storageRef = storage.refFromURL("gs://podscript-214820.appspot.com/test/Screen Shot 2018-09-22 at 4.40.16 PM.png");
     console.log(storageRef);
     storageRef.child('test/Screen Shot 2018-09-22 at 4.40.16 PM.png').getDownloadURL().then(function (url) {
       // `url` is the download URL for 'images/stars.jpg'
