@@ -27787,7 +27787,7 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
   componentDidMount() {
     window.addEventListener('resize', this.handleResize.bind(this));
     this.setState({ isLoading: false });
-    const epsiodesRef = __WEBPACK_IMPORTED_MODULE_6__firebase__["a" /* default */].database().ref('eps');
+    const epsiodesRef = __WEBPACK_IMPORTED_MODULE_6__firebase__["a" /* default */].database().ref('Eps');
 
     epsiodesRef.on('value', snapshot => {
       let episodes = snapshot.val();
@@ -28492,11 +28492,11 @@ class Episode extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
         } else if (this.state.completed === "1") {
             completedIcon = "clock";
             completedColor = "#EEAB00";
-            completedMessage = "Transcription in Progress";
+            completedMessage = "Raw Transcript Available";
         } else {
             completedIcon = "check-circle";
             completedColor = "#2EA300";
-            completedMessage = "Episode Transcription Available";
+            completedMessage = "Completed Transcript Available";
         }
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', null, !this.state.displayAll ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { key: `${id}-episode-id`, className: 'row episode' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'col-xs-2' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'img-thumb img-fluid', src: __webpack_require__(42), alt: 'My Brother, My Brother and Me Logo' })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'col-7 col-lg-9' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'episode-info' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h3', { className: 'row name text-truncate' }, EpisodeTitle)), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { id: 'cool-hover', className: 'row col-12', onClick: this.showMoreorLess }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__fortawesome_react_fontawesome__["a" /* FontAwesomeIcon */], { className: 'hideorshow', icon: this.state.moreOrLess === "+" ? "chevron-down" : "chevron-up", 'vertical-align': 'middle' }))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { id: `${id}-completed`, className: 'completed col-1' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__fortawesome_react_fontawesome__["a" /* FontAwesomeIcon */], { icon: completedIcon,
             color: completedColor, size: '2x', 'vertical-align': 'middle' }))) : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { key: `${id}-episode-id`, className: 'row episode-expanded' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'row' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'col-md-4' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'img-expanded row center-block', src: __webpack_require__(43), alt: 'My Brother, My Brother and Me Logo' }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { id: `${id}-completed`, className: 'completed-expanded row' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__fortawesome_react_fontawesome__["a" /* FontAwesomeIcon */], { icon: completedIcon,
