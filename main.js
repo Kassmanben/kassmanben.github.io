@@ -27667,7 +27667,7 @@ module.exports = camelize;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__fortawesome_react_fontawesome__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__fortawesome_fontawesome_svg_core__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__fortawesome_free_solid_svg_icons__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__firebase_js__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__firebase__ = __webpack_require__(45);
 
 
 
@@ -27787,7 +27787,7 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
   componentDidMount() {
     window.addEventListener('resize', this.handleResize.bind(this));
     this.setState({ isLoading: false });
-    const epsiodesRef = __WEBPACK_IMPORTED_MODULE_6__firebase_js__["a" /* default */].database().ref('eps');
+    const epsiodesRef = __WEBPACK_IMPORTED_MODULE_6__firebase__["a" /* default */].database().ref('eps');
     epsiodesRef.on('value', snapshot => {
       let episodes = snapshot.val();
       let newState = [];
