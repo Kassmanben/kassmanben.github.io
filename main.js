@@ -27787,7 +27787,7 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
   componentDidMount() {
     window.addEventListener('resize', this.handleResize.bind(this));
     this.setState({ isLoading: false });
-    const epsiodesRef = __WEBPACK_IMPORTED_MODULE_6__firebase__["a" /* default */].database().ref('Eps[0]');
+    const epsiodesRef = __WEBPACK_IMPORTED_MODULE_6__firebase__["a" /* default */].database().ref('Eps');
 
     epsiodesRef.on('value', snapshot => {
       let episodes = snapshot.val();
