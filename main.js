@@ -27789,7 +27789,7 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
     this.setState({ isLoading: false });
     const epsiodesRef = __WEBPACK_IMPORTED_MODULE_6__firebase__["a" /* default */].database().ref('eps');
     const storage = __WEBPACK_IMPORTED_MODULE_6__firebase__["a" /* default */].storage();
-    var testRef = storageRef.child('test/Screen Shot 2018-09-22 at 4.40.16 PM.png');
+    var testRef = storage.child('test/Screen Shot 2018-09-22 at 4.40.16 PM.png');
 
     // Get the download URL
     testRef.getDownloadURL().then(function (url) {
