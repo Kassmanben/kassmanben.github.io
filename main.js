@@ -29193,20 +29193,19 @@ module.exports = __webpack_require__.p + "a562fdf5eed483ef303471e095aae625.jpg";
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_firebase__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_firebase__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_firebase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_firebase__);
 
 const config = {
-    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
-    databaseURL: process.env.REACT_APP_DATABASE_URL,
-    projectId: process.env.REACT_APP_PROJECT_ID,
-    storageBucket: process.env.REACT_APP_PROJECT_ID + ".appspot.com",
-    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID
+    apiKey: "AIzaSyBHp6EJJ9rbjRmZ0OwwrmJXQrw7UtCpvec",
+    authDomain: "podscript-214820.firebaseapp.com",
+    databaseURL: "https://podscript-214820.firebaseio.com",
+    projectId: "podscript-214820",
+    storageBucket: "podscript-214820.appspot.com",
+    messagingSenderId: "1092843309004"
 };
 __WEBPACK_IMPORTED_MODULE_0_firebase___default.a.initializeApp(config);
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_firebase___default.a);
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
 
 /***/ }),
 /* 46 */
