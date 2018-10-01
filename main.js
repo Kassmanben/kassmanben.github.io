@@ -258,6 +258,21 @@ process.umask = function() { return 0; };
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+/* WEBPACK VAR INJECTION */(function(process) {
+
+if (process.env.NODE_ENV === 'production') {
+  module.exports = __webpack_require__(22);
+} else {
+  module.exports = __webpack_require__(23);
+}
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
 
 
 Object.defineProperty(exports, '__esModule', { value: true });
@@ -657,21 +672,6 @@ var firebase = createFirebaseNamespace();
 exports.firebase = firebase;
 exports.default = firebase;
 
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {
-
-if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(22);
-} else {
-  module.exports = __webpack_require__(23);
-}
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 3 */
@@ -2997,7 +2997,7 @@ var autoReplace = function autoReplace() {
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-var tslib_1 = __webpack_require__(51);
+var tslib_1 = __webpack_require__(52);
 
 /**
  * Copyright 2017 Google Inc.
@@ -5094,7 +5094,7 @@ if(false) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__fortawesome_fontawesome_svg_core__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__);
 
 
@@ -5674,13 +5674,13 @@ var convertCurry = convert.bind(null, __WEBPACK_IMPORTED_MODULE_2_react___defaul
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return faChevronUp; });
 /* unused harmony export faChild */
 /* unused harmony export faChurch */
-/* unused harmony export faCircle */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return faCircle; });
 /* unused harmony export faCircleNotch */
 /* unused harmony export faCity */
 /* unused harmony export faClipboard */
 /* unused harmony export faClipboardCheck */
 /* unused harmony export faClipboardList */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return faClock; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return faClock; });
 /* unused harmony export faClone */
 /* unused harmony export faClosedCaptioning */
 /* unused harmony export faCloud */
@@ -6232,7 +6232,7 @@ var convertCurry = convert.bind(null, __WEBPACK_IMPORTED_MODULE_2_react___defaul
 /* unused harmony export faThumbtack */
 /* unused harmony export faTicketAlt */
 /* unused harmony export faTimes */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return faTimesCircle; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return faTimesCircle; });
 /* unused harmony export faTint */
 /* unused harmony export faTintSlash */
 /* unused harmony export faTired */
@@ -8170,12 +8170,12 @@ function setLogLevel(level) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__App__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__registerServiceWorker__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__registerServiceWorker__ = __webpack_require__(64);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_css__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__app_css__);
 
@@ -9773,7 +9773,7 @@ if (process.env.NODE_ENV === 'production') {
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(6),ba=__webpack_require__(2),m=__webpack_require__(13),p=__webpack_require__(4),v=__webpack_require__(5),da=__webpack_require__(14),ea=__webpack_require__(15),fa=__webpack_require__(16),ha=__webpack_require__(7);
+var aa=__webpack_require__(6),ba=__webpack_require__(1),m=__webpack_require__(13),p=__webpack_require__(4),v=__webpack_require__(5),da=__webpack_require__(14),ea=__webpack_require__(15),fa=__webpack_require__(16),ha=__webpack_require__(7);
 function A(a){for(var b=arguments.length-1,c="https://reactjs.org/docs/error-decoder.html?invariant="+a,d=0;d<b;d++)c+="&args[]="+encodeURIComponent(arguments[d+1]);aa(!1,"Minified React error #"+a+"; visit %s for the full message or use the non-minified dev environment for full errors and additional helpful warnings. ",c)}ba?void 0:A("227");
 function ia(a,b,c,d,e,f,g,h,k){this._hasCaughtError=!1;this._caughtError=null;var n=Array.prototype.slice.call(arguments,3);try{b.apply(c,n)}catch(r){this._caughtError=r,this._hasCaughtError=!0}}
 var B={_caughtError:null,_hasCaughtError:!1,_rethrowError:null,_hasRethrowError:!1,invokeGuardedCallback:function(a,b,c,d,e,f,g,h,k){ia.apply(B,arguments)},invokeGuardedCallbackAndCatchFirstError:function(a,b,c,d,e,f,g,h,k){B.invokeGuardedCallback.apply(this,arguments);if(B.hasCaughtError()){var n=B.clearCaughtError();B._hasRethrowError||(B._hasRethrowError=!0,B._rethrowError=n)}},rethrowCaughtError:function(){return ka.apply(B,arguments)},hasCaughtError:function(){return B._hasCaughtError},clearCaughtError:function(){if(B._hasCaughtError){var a=
@@ -10082,7 +10082,7 @@ if (process.env.NODE_ENV !== "production") {
 'use strict';
 
 var invariant = __webpack_require__(6);
-var React = __webpack_require__(2);
+var React = __webpack_require__(1);
 var warning = __webpack_require__(12);
 var ExecutionEnvironment = __webpack_require__(13);
 var _assign = __webpack_require__(4);
@@ -27659,15 +27659,16 @@ module.exports = camelize;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_css__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__app_css__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Episode__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__fortawesome_react_fontawesome__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__fortawesome_fontawesome_svg_core__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__fortawesome_free_solid_svg_icons__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__firebase__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__EpisodeProgress__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__fortawesome_react_fontawesome__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__fortawesome_fontawesome_svg_core__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__fortawesome_free_solid_svg_icons__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__firebase__ = __webpack_require__(46);
 
 
 
@@ -27676,7 +27677,8 @@ module.exports = camelize;
 
 
 
-__WEBPACK_IMPORTED_MODULE_4__fortawesome_fontawesome_svg_core__["b" /* library */].add(__WEBPACK_IMPORTED_MODULE_5__fortawesome_free_solid_svg_icons__["a" /* faCheckCircle */], __WEBPACK_IMPORTED_MODULE_5__fortawesome_free_solid_svg_icons__["e" /* faTimesCircle */], __WEBPACK_IMPORTED_MODULE_5__fortawesome_free_solid_svg_icons__["b" /* faChevronDown */], __WEBPACK_IMPORTED_MODULE_5__fortawesome_free_solid_svg_icons__["c" /* faChevronUp */]);
+
+__WEBPACK_IMPORTED_MODULE_5__fortawesome_fontawesome_svg_core__["b" /* library */].add(__WEBPACK_IMPORTED_MODULE_6__fortawesome_free_solid_svg_icons__["a" /* faCheckCircle */], __WEBPACK_IMPORTED_MODULE_6__fortawesome_free_solid_svg_icons__["f" /* faTimesCircle */], __WEBPACK_IMPORTED_MODULE_6__fortawesome_free_solid_svg_icons__["b" /* faChevronDown */], __WEBPACK_IMPORTED_MODULE_6__fortawesome_free_solid_svg_icons__["c" /* faChevronUp */], __WEBPACK_IMPORTED_MODULE_6__fortawesome_free_solid_svg_icons__["d" /* faCircle */]);
 
 class App extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
   constructor(props) {
@@ -27685,9 +27687,15 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
       title: "",
       oldestFirst: false,
       completedFilter: "All Eps.",
-      showFilterBool: true,
+      showFilterBool: false,
       showInfoBool: false,
       showPodcastsBool: false,
+      showProgressBool: false,
+      show400: false,
+      show300: false,
+      show200: false,
+      show100: false,
+      show000: false,
       showBioBool: false,
       showContactBool: false,
       showSupportBool: false,
@@ -27703,6 +27711,12 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
     this.showFilters = this.showFilters.bind(this);
     this.showInfo = this.showInfo.bind(this);
     this.showPodcasts = this.showPodcasts.bind(this);
+    this.showProgress = this.showProgress.bind(this);
+    this.show400 = this.show400.bind(this);
+    this.show300 = this.show300.bind(this);
+    this.show200 = this.show200.bind(this);
+    this.show100 = this.show100.bind(this);
+    this.show000 = this.show000.bind(this);
     this.showBio = this.showBio.bind(this);
     this.showContact = this.showContact.bind(this);
     this.showSupport = this.showSupport.bind(this);
@@ -27722,16 +27736,67 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
   showFilters() {
     this.setState({ showFilterBool: !this.state.showFilterBool });
   }
+  show400() {
+    this.setState({ show400: !this.state.show400 });
+    this.setState({ show300: false });
+    this.setState({ show200: false });
+    this.setState({ show100: false });
+    this.setState({ show000: false });
+  }
+
+  show300() {
+    this.setState({ show300: !this.state.show300 });
+    this.setState({ show400: false });
+    this.setState({ show200: false });
+    this.setState({ show100: false });
+    this.setState({ show000: false });
+  }
+
+  show200() {
+    this.setState({ show200: !this.state.show200 });
+    this.setState({ show300: false });
+    this.setState({ show400: false });
+    this.setState({ show100: false });
+    this.setState({ show000: false });
+  }
+
+  show100() {
+    this.setState({ show100: !this.state.show100 });
+    this.setState({ show300: false });
+    this.setState({ show400: false });
+    this.setState({ show200: false });
+    this.setState({ show000: false });
+  }
+
+  show000() {
+    this.setState({ show000: !this.state.show000 });
+    this.setState({ show300: false });
+    this.setState({ show400: false });
+    this.setState({ show100: false });
+    this.setState({ show200: false });
+  }
+
   showInfo() {
     this.setState({ showInfoBool: !this.state.showInfoBool });
     this.setState({ showPodcastsBool: false });
+    this.setState({ showProgressBool: false });
     this.setState({ showBioBool: false });
     this.setState({ showContactBool: false });
     this.setState({ showSupportBool: false });
   }
   showPodcasts() {
     this.setState({ showInfoBool: false });
-    this.setState({ showPodcastsBool: !this.state.showPodcastBool });
+    this.setState({ showPodcastsBool: !this.state.showPodcastsBool });
+    this.setState({ showProgressBool: false });
+    this.setState({ showBioBool: false });
+    this.setState({ showContactBool: false });
+    this.setState({ showSupportBool: false });
+  }
+
+  showProgress() {
+    this.setState({ showInfoBool: false });
+    this.setState({ showPodcastsBool: false });
+    this.setState({ showProgressBool: !this.state.showProgressBool });
     this.setState({ showBioBool: false });
     this.setState({ showContactBool: false });
     this.setState({ showSupportBool: false });
@@ -27740,6 +27805,7 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
   showBio() {
     this.setState({ showInfoBool: false });
     this.setState({ showPodcastsBool: false });
+    this.setState({ showProgressBool: false });
     this.setState({ showBioBool: !this.state.showBioBool });
     this.setState({ showContactBool: false });
     this.setState({ showSupportBool: false });
@@ -27748,6 +27814,7 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
   showContact() {
     this.setState({ showInfoBool: false });
     this.setState({ showPodcastsBool: false });
+    this.setState({ showProgressBool: false });
     this.setState({ showBioBool: false });
     this.setState({ showContactBool: !this.state.showContactBool });
     this.setState({ showSupportBool: false });
@@ -27756,6 +27823,7 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
   showSupport() {
     this.setState({ showInfoBool: false });
     this.setState({ showPodcastsBool: false });
+    this.setState({ showProgressBool: false });
     this.setState({ showBioBool: false });
     this.setState({ showContactBool: false });
     this.setState({ showSupportBool: !this.state.showSupportBool });
@@ -27788,7 +27856,7 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
   componentDidMount() {
     window.addEventListener('resize', this.handleResize.bind(this));
     this.setState({ isLoading: false });
-    const episodesRef = __WEBPACK_IMPORTED_MODULE_6__firebase__["a" /* default */].database().ref('eps');
+    const episodesRef = __WEBPACK_IMPORTED_MODULE_7__firebase__["a" /* default */].database().ref('eps');
 
     episodesRef.on('value', snapshot => {
       let episodes = snapshot.val();
@@ -27801,7 +27869,8 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
           EpisodeNumber: episodes[item].EpisodeNumber,
           Completed: episodes[item].Completed,
           EpisodeRawTranscript: episodes[item].EpisodeRawTranscript,
-          EpisodeCompletedTranscript: episodes[item].EpisodeCompletedTranscript
+          EpisodeCompletedTranscript: episodes[item].EpisodeCompletedTranscript,
+          TranscriptionProgress: episodes[item].TranscriptionProgress
         });
       }
       this.setState({
@@ -27828,7 +27897,67 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
     //   return(<div>Loading</div>)
     // }
     episodes = this.state.oldestFirst ? Array.from(episodes) : Array.from(episodes).reverse();
-    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'App' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('nav', { className: 'menu row' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'menuButton col-sm-12' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a', { onClick: this.showMenu }, 'Menu')), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: this.state.windowWidth > 1000 || this.state.showMenuBool ? "col-sm-12 col-lg-2 menu-item" : "col-sm-12 col-lg-2 menu-item hidden" }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a', { onClick: this.showInfo }, 'Info')), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: this.state.windowWidth > 1000 || this.state.showMenuBool ? "col-sm-12 col-lg-2 menu-item" : "col-sm-12 col-lg-2 menu-item hidden" }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a', { onClick: this.showPodcasts }, 'Podcasts')), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: this.state.windowWidth > 1000 || this.state.showMenuBool ? "col-sm-12 col-lg-2 menu-item" : "col-sm-12 col-lg-2 menu-item hidden" }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a', { onClick: this.showBio }, 'Who are we?')), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: this.state.windowWidth > 1000 || this.state.showMenuBool ? "col-sm-12 col-lg-2 menu-item" : "col-sm-12 col-lg-2 menu-item hidden" }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a', { onClick: this.showContact }, 'Contact Me')), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: this.state.windowWidth > 1000 || this.state.showMenuBool ? "col-sm-12 col-lg-2 menu-item" : "col-sm-12 col-lg-2 menu-item hidden" }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a', { onClick: this.showSupport }, 'Support Project'))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: this.state.showInfoBool && (this.state.showMenuBool || this.state.windowWidth > 1000) ? "info" : "hidden" }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h3', null, 'Background'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', null, 'I have written some code that can transcribe speech to text with about 95% accuracy. This makes it possible to feed in an episode of a podcast and get a transcript much faster than typing it out by hand'), 'While this is very helpful for the transcription process, there are four main issues that keep this from being perfect:', __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('ul', null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('li', null, 'Proper nouns are hard to distinguish (i.e. "Shia LaBouef" is transcribed as "Shaila buffs")'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('li', null, 'Made up or uncommon words are also tricky ("Crocoswine" is transcribed as "crock of swing")'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('li', null, 'Mumbling or \'unorthodox\' pronunciations (Unorthodox in terms of what the speech engine is trained on, not as a negative description of someone\'s accent or voice)'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('li', null, 'The software can identify between speakers when they have clearly different voices (it would have an easy time with Kristin Schall and Tom Waits, for example), but when people sound very similar (like the McElroy brothers), it has more difficulty.')), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h4', null, 'That\'s where you come in!'), 'The episode\'s status is shown by the icon next to it:', __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('ul', null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('li', null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__fortawesome_react_fontawesome__["a" /* FontAwesomeIcon */], { icon: 'times-circle', color: '#C41465', size: '2x', 'vertical-align': 'middle' }), ' means there is not a raw transcript or completed transcript ready. If you\'d like to request a transcript for that episode, just click the button in the episode description to send me an email, and I\'ll try to have it up within 24 hours!'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('li', null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__fortawesome_react_fontawesome__["a" /* FontAwesomeIcon */], { icon: 'clock', color: '#EEAB00', size: '2x', 'vertical-align': 'middle' }), ' means there ', __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('b', null, 'IS'), ' a raw transcript, but ', __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('b', null, 'not'), ' a completed transcript yet. Feel free to download the raw transcript, but understand that there are going to be some errors as mentioned above. If you\'d like to sign up to help clean up this transcript, just click the button in the description and send me an email!'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('li', null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__fortawesome_react_fontawesome__["a" /* FontAwesomeIcon */], { icon: 'check-circle', color: '#2EA300', size: '2x', 'vertical-align': 'middle' }), ' means there ', __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('b', null, 'IS'), ' a raw transcript, ', __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('b', null, 'AND'), ' a completed transcript. Feel free to download the raw transcript or the completed transcript! If you want to report an issue with the completed transcript, click the button in the description to let me know!')), 'If you have any other questions about episode transcription or want to provide further feedback, feel free to email me at ', __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a', { href: 'mailto:podscript@gmail.com' }, 'podscript@gmail.com'), '.')), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: this.state.showPodcastsBool && (this.state.showMenuBool || this.state.windowWidth > 1000) ? "podcasts" : "hidden" }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h3', null, 'Podcasts'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', null, 'At the moment, I am only working on My Brother, My Brother and Me! The more community members get involved on this project, the more podcasts I can add.'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h4', null, 'Can you provide transcriptions for my podcast?'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', null, 'Absolutely! If you want to reach out to me about providing transcriptions for your podcast, send me a message ', __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a', { onClick: this.showContact }, 'from this page'), ' and we can talk about the logistics of that!'))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: this.state.showBioBool && (this.state.showMenuBool || this.state.windowWidth > 1000) ? "bio" : "hidden" }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h3', null, 'Who are we?'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', null, 'Hi! My name is Ben Kassman. I\'m a software developer, based out of Portland, OR! I am really passionate about accessibility in all things. The code that I use for this project was started while I was working on research with the National Technical Institute for the Deaf in Rochester NY. I built the platform for this website and started the project to get these episodes transcribed. '), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', null, 'However, I\'m not the only person involved in the project. It wouldn\'t be possible without all the wonderful people who have reached out to help clean up transcripts! If you want your name to join those below, feel free to look through untranscribed episodes and sign up for one!'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h5', null, 'Social Media'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'container-fluid' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a', { href: 'https://www.facebook.com/KassmanBen/', className: 'fa fa-facebook' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span', null, 'Facebook')), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a', { href: 'https://www.linkedin.com/in/ben-kassman/', className: 'fa fa-linkedin' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span', null, 'LinkedIn')), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a', { href: 'https://www.instagram.com/benkassman/', className: 'fa fa-instagram' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span', null, 'Instagram')), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a', { href: 'https://twitter.com/kassman_ben', className: 'fa fa-twitter' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span', null, 'Twitter')), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a', { href: 'https://github.com/kassmanben', className: 'fa fa-github' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span', null, 'Github'))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h5', null, 'Website: ', __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a', { href: 'https://www.kassmanben.com' }, 'kassmanben.com')), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h5', null, 'Wonderful Contributors!'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', null, 'This section is currently blank, but will be filled up as people add to the completed transcripts list!'))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: this.state.showContactBool && (this.state.showMenuBool || this.state.windowWidth > 1000) ? "contact" : "hidden" }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h3', null, 'Contact Me'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p', null, 'All contact requests should be sent to ', __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('b', null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a', { href: 'mailto:podscriptfyi@gmail.com' }, 'podscriptfyi@gmail.com')), '. Here are some subject line tags to help me get back to you faster!'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('ul', null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('li', null, 'Want me to help provide transcripts for your podcast? Put "Podcast Transcript" somewhere in the subject line.'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('li', null, 'Have any feedback about the website? Include "Website Feedback" in the subject line'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('li', null, 'Want to provide some art for the logo/favicon? Plonk "Art Time" down in the subject line ')))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: this.state.showSupportBool && (this.state.showMenuBool || this.state.windowWidth > 1000) ? "support" : "hidden" }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h3', null, 'Support the Project'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', null, 'There are costs associated with this, from hosting the website to per-minute-transcription costs (roughly 3 cents per minute of audio transcribed, it adds up quickly). I\'d like to continue providing this service for free! In terms of transcription, an average hour-long podcast will cost roughly $1.24 to transcribe. Just a little bit a month would really help me to cover these costs and continue to expand to more podcasts in the future! Patreon doesn\'t allow one-time donations, but I don\'t mind if you donate for one month and cancel afterwards. Every little bit helps! ', __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h4', null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a', { href: 'https://www.patreon.com/podscript' }, 'My Patreon Page'))))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h1', { className: 'logo text-center' }, 'Podscript'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h2', { className: 'logo-subtitle' }, 'Crowdsourcing transcripts for all your favorite podcasts'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'row', id: 'sticky' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'text', className: 'form-control form-control-lg', id: 'search', placeholder: 'Search', value: this.state.title, onChange: this.handleChange }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'filters' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span', { className: this.state.showFilterBool ? "hidden" : "" }, 'Filters:'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { className: this.state.showFilterBool ? "hidden" : "btn", id: 'sortButton', type: 'button', onClick: this.sortEpisodes, value: this.state.oldestFirst ? "Oldest First ▲" : "Newest First ▼" }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { className: this.state.showFilterBool ? "hidden" : "btn", id: 'filterCompletedButton', type: 'button', onClick: this.filterCompleted, value: this.state.completedFilter }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { id: 'filterarrow', className: 'row col-12', onClick: this.showFilters }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__fortawesome_react_fontawesome__["a" /* FontAwesomeIcon */], { className: 'hideorshow', icon: this.state.showFilterBool ? "chevron-down" : "chevron-up", 'vertical-align': 'middle' })))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { id: 'myimg' }), episodes.filter(function (episode) {
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'App' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('nav', { className: 'menu row' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'menuButton col-sm-12' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a', { onClick: this.showMenu }, 'Menu')), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: this.state.windowWidth > 1000 || this.state.showMenuBool ? "col-sm-12 col-lg-2 menu-item" : "col-sm-12 col-lg-2 menu-item hidden" }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a', { onClick: this.showInfo }, 'Info')), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: this.state.windowWidth > 1000 || this.state.showMenuBool ? "col-sm-12 col-lg-2 menu-item" : "col-sm-12 col-lg-2 menu-item hidden" }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a', { onClick: this.showPodcasts }, 'Podcasts')), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: this.state.windowWidth > 1000 || this.state.showMenuBool ? "col-sm-12 col-lg-2 menu-item" : "col-sm-12 col-lg-2 menu-item hidden" }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a', { onClick: this.showProgress }, 'Progress')), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: this.state.windowWidth > 1000 || this.state.showMenuBool ? "col-sm-12 col-lg-2 menu-item" : "col-sm-12 col-lg-2 menu-item hidden" }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a', { onClick: this.showBio }, 'Who are we?')), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: this.state.windowWidth > 1000 || this.state.showMenuBool ? "col-sm-12 col-lg-2 menu-item" : "col-sm-12 col-lg-2 menu-item hidden" }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a', { onClick: this.showContact }, 'Contact Me')), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: this.state.windowWidth > 1000 || this.state.showMenuBool ? "col-sm-12 col-lg-2 menu-item" : "col-sm-12 col-lg-2 menu-item hidden" }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a', { onClick: this.showSupport }, 'Support Project'))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: this.state.showInfoBool && (this.state.showMenuBool || this.state.windowWidth > 1000) ? "info" : "hidden" }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h3', null, 'Background'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', null, 'I have written some code that can transcribe speech to text with about 95% accuracy. This makes it possible to feed in an episode of a podcast and get a transcript much faster than typing it out by hand'), 'While this is very helpful for the transcription process, there are four main issues that keep this from being perfect:', __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('ul', null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('li', null, 'Proper nouns are hard to distinguish (i.e. "Shia LaBouef" is transcribed as "Shaila buffs")'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('li', null, 'Made up or uncommon words are also tricky ("Crocoswine" is transcribed as "crock of swing")'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('li', null, 'Mumbling or \'unorthodox\' pronunciations (Unorthodox in terms of what the speech engine is trained on, not as a negative description of someone\'s accent or voice)'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('li', null, 'The software can identify between speakers when they have clearly different voices (it would have an easy time with Kristin Schall and Tom Waits, for example), but when people sound very similar (like the McElroy brothers), it has more difficulty.')), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h4', null, 'That\'s where you come in!'), 'The episode\'s status is shown by the icon next to it:', __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('ul', null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('li', null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__fortawesome_react_fontawesome__["a" /* FontAwesomeIcon */], { icon: 'times-circle', color: '#C41465', size: '2x', 'vertical-align': 'middle' }), ' means there is not a raw transcript or completed transcript ready. If you\'d like to request a transcript for that episode, just click the button in the episode description to send me an email, and I\'ll try to have it up within 24 hours!'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('li', null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__fortawesome_react_fontawesome__["a" /* FontAwesomeIcon */], { icon: 'clock', color: '#EEAB00', size: '2x', 'vertical-align': 'middle' }), ' means there ', __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('b', null, 'IS'), ' a raw transcript, but ', __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('b', null, 'not'), ' a completed transcript yet. Feel free to download the raw transcript, but understand that there are going to be some errors as mentioned above. If you\'d like to sign up to help clean up this transcript, just click the button in the description and send me an email!'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('li', null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__fortawesome_react_fontawesome__["a" /* FontAwesomeIcon */], { icon: 'check-circle', color: '#2EA300', size: '2x', 'vertical-align': 'middle' }), ' means there ', __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('b', null, 'IS'), ' a raw transcript, ', __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('b', null, 'AND'), ' a completed transcript. Feel free to download the raw transcript or the completed transcript! If you want to report an issue with the completed transcript, click the button in the description to let me know!')), 'If you have any other questions about episode transcription or want to provide further feedback, feel free to email me at ', __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a', { href: 'mailto:podscript@gmail.com' }, 'podscript@gmail.com'), '.')), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: this.state.showPodcastsBool && (this.state.showMenuBool || this.state.windowWidth > 1000) ? "podcasts" : "hidden" }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h3', null, 'Podcasts'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', null, 'At the moment, I am only working on My Brother, My Brother and Me! The more community members get involved on this project, the more podcasts I can add.'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h4', null, 'Can you provide transcriptions for my podcast?'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', null, 'Absolutely! If you want to reach out to me about providing transcriptions for your podcast, send me a message ', __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a', { onClick: this.showContact }, 'from this page'), ' and we can talk about the logistics of that!'))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: this.state.showProgressBool && (this.state.showMenuBool || this.state.windowWidth > 1000) ? "transcript_progress" : "hidden" }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h3', null, 'Progress'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('ul', null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('li', null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__fortawesome_react_fontawesome__["a" /* FontAwesomeIcon */], { icon: 'circle', color: '#C41465', size: '2x', 'vertical-align': 'middle' }), '  This episode isn\'t finished! Click on it to sign up and help!'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('li', null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__fortawesome_react_fontawesome__["a" /* FontAwesomeIcon */], { icon: 'circle', color: '#EEAB00', size: '2x', 'vertical-align': 'middle' }), '  Someone is currently working on this episode'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('li', null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__fortawesome_react_fontawesome__["a" /* FontAwesomeIcon */], { icon: 'circle', color: '#2EA300', size: '2x', 'vertical-align': 'middle' }), '  These episodes have been transcribed already!')), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { onClick: this.show400, className: 'menu-item' }, '400-Present'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: this.state.showProgressBool && this.state.show400 && (this.state.showMenuBool || this.state.windowWidth > 1000) ? "row" : "hidden" }, episodes.filter(function (episode) {
+      if (parseInt(episode.EpisodeNumber) > 399) {
+        return episode;
+      }
+    }, this).map(episode => {
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__EpisodeProgress__["a" /* default */], {
+        key: `${episode.id}-episode-id-transcript`,
+        EpisodeNumber: episode.EpisodeNumber,
+        TranscriptionProgress: episode.TranscriptionProgress,
+        Completed: episode.Completed,
+        id: episode.id
+      });
+    })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { onClick: this.show300, className: 'menu-item' }, '300-399'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: this.state.showProgressBool && this.state.show300 && (this.state.showMenuBool || this.state.windowWidth > 1000) ? "row" : "hidden" }, episodes.filter(function (episode) {
+      if (parseInt(episode.EpisodeNumber) < 400 && parseInt(episode.EpisodeNumber) > 299) {
+        return episode;
+      }
+    }, this).map(episode => {
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__EpisodeProgress__["a" /* default */], {
+        key: `${episode.id}-episode-id-transcript`,
+        EpisodeNumber: episode.EpisodeNumber,
+        TranscriptionProgress: episode.TranscriptionProgress,
+        Completed: episode.Completed,
+        id: episode.id
+      });
+    })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { onClick: this.show200, className: 'menu-item' }, '200-299'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: this.state.showProgressBool && this.state.show200 && (this.state.showMenuBool || this.state.windowWidth > 1000) ? "row" : "hidden" }, episodes.filter(function (episode) {
+      if (parseInt(episode.EpisodeNumber) < 300 && parseInt(episode.EpisodeNumber) > 199) {
+        return episode;
+      }
+    }, this).map(episode => {
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__EpisodeProgress__["a" /* default */], {
+        key: `${episode.id}-episode-id-transcript`,
+        EpisodeNumber: episode.EpisodeNumber,
+        TranscriptionProgress: episode.TranscriptionProgress,
+        Completed: episode.Completed,
+        id: episode.id
+      });
+    })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { onClick: this.show100, className: 'menu-item' }, '100-199'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: this.state.showProgressBool && this.state.show100 && (this.state.showMenuBool || this.state.windowWidth > 1000) ? "row" : "hidden" }, episodes.filter(function (episode) {
+      if (parseInt(episode.EpisodeNumber) < 200 && parseInt(episode.EpisodeNumber) > 99) {
+        return episode;
+      }
+    }, this).map(episode => {
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__EpisodeProgress__["a" /* default */], {
+        key: `${episode.id}-episode-id-transcript`,
+        EpisodeNumber: episode.EpisodeNumber,
+        TranscriptionProgress: episode.TranscriptionProgress,
+        Completed: episode.Completed,
+        id: episode.id
+      });
+    })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { onClick: this.show000, className: 'menu-item' }, '000-099'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: this.state.showProgressBool && this.state.show000 && (this.state.showMenuBool || this.state.windowWidth > 1000) ? "row" : "hidden" }, episodes.filter(function (episode) {
+      if (parseInt(episode.EpisodeNumber) < 100) {
+        return episode;
+      }
+    }, this).map(episode => {
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__EpisodeProgress__["a" /* default */], {
+        key: `${episode.id}-episode-id-transcript`,
+        EpisodeNumber: episode.EpisodeNumber,
+        TranscriptionProgress: episode.TranscriptionProgress,
+        Completed: episode.Completed,
+        id: episode.id
+      });
+    })))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: this.state.showBioBool && (this.state.showMenuBool || this.state.windowWidth > 1000) ? "bio" : "hidden" }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h3', null, 'Who are we?'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', null, 'Hi! My name is Ben Kassman. I\'m a software developer, based out of Portland, OR! I am really passionate about accessibility in all things. The code that I use for this project was started while I was working on research with the National Technical Institute for the Deaf in Rochester NY. I built the platform for this website and started the project to get these episodes transcribed. '), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', null, 'However, I\'m not the only person involved in the project. It wouldn\'t be possible without all the wonderful people who have reached out to help clean up transcripts! If you want your name to join those below, feel free to look through untranscribed episodes and sign up for one!'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h5', null, 'Social Media'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'container-fluid' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a', { href: 'https://www.facebook.com/KassmanBen/', className: 'fa fa-facebook' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span', null, 'Facebook')), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a', { href: 'https://www.linkedin.com/in/ben-kassman/', className: 'fa fa-linkedin' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span', null, 'LinkedIn')), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a', { href: 'https://www.instagram.com/benkassman/', className: 'fa fa-instagram' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span', null, 'Instagram')), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a', { href: 'https://twitter.com/kassman_ben', className: 'fa fa-twitter' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span', null, 'Twitter')), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a', { href: 'https://github.com/kassmanben', className: 'fa fa-github' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span', null, 'Github'))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h5', null, 'Website: ', __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a', { href: 'https://www.kassmanben.com' }, 'kassmanben.com')), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h5', null, 'Wonderful Contributors!'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', null, 'This section is currently blank, but will be filled up as people add to the completed transcripts list!'))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: this.state.showContactBool && (this.state.showMenuBool || this.state.windowWidth > 1000) ? "contact" : "hidden" }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h3', null, 'Contact Me'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p', null, 'All contact requests should be sent to ', __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('b', null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a', { href: 'mailto:podscriptfyi@gmail.com' }, 'podscriptfyi@gmail.com')), '. Here are some subject line tags to help me get back to you faster!'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('ul', null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('li', null, 'Want me to help provide transcripts for your podcast? Put "Podcast Transcript" somewhere in the subject line.'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('li', null, 'Have any feedback about the website? Include "Website Feedback" in the subject line'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('li', null, 'Want to provide some art for the logo/favicon? Plonk "Art Time" down in the subject line ')))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: this.state.showSupportBool && (this.state.showMenuBool || this.state.windowWidth > 1000) ? "support" : "hidden" }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h3', null, 'Support the Project'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', null, 'There are costs associated with this, from hosting the website to per-minute-transcription costs (roughly 3 cents per minute of audio transcribed, it adds up quickly). I\'d like to continue providing this service for free! In terms of transcription, an average hour-long podcast will cost roughly $1.24 to transcribe. Just a little bit a month would really help me to cover these costs and continue to expand to more podcasts in the future! Patreon doesn\'t allow one-time donations, but I don\'t mind if you donate for one month and cancel afterwards. Every little bit helps! ', __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h4', null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a', { href: 'https://www.patreon.com/podscript' }, 'My Patreon Page'))))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h1', { className: 'logo text-center' }, 'Podscript'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h2', { className: 'logo-subtitle' }, 'Crowdsourcing transcripts for all your favorite podcasts')), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'row', id: 'sticky' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'text', className: 'form-control form-control-lg', id: 'search', placeholder: 'Search', value: this.state.title, onChange: this.handleChange }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'filters' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span', { className: this.state.showFilterBool ? "hidden" : "" }, 'Filters:'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { className: this.state.showFilterBool ? "hidden" : "btn", id: 'sortButton', type: 'button', onClick: this.sortEpisodes, value: this.state.oldestFirst ? "Oldest First ▲" : "Newest First ▼" }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { className: this.state.showFilterBool ? "hidden" : "btn", id: 'filterCompletedButton', type: 'button', onClick: this.filterCompleted, value: this.state.completedFilter }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { id: 'filterarrow', className: 'row col-12', onClick: this.showFilters }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__fortawesome_react_fontawesome__["a" /* FontAwesomeIcon */], { className: 'hideorshow', icon: this.state.showFilterBool ? "chevron-down" : "chevron-up", 'vertical-align': 'middle' })))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { id: 'myimg' }), episodes.filter(function (episode) {
       if (episode.EpisodeDescription.toLowerCase().indexOf(this.state.title.toLowerCase()) !== -1 || episode.EpisodeTitle.toLowerCase().indexOf(this.state.title.toLowerCase()) !== -1) {
         if (this.state.completedFilter === "All Eps.") {
           return episode;
@@ -27866,7 +27995,7 @@ exports = module.exports = __webpack_require__(35)(false);
 
 
 // module
-exports.push([module.i, "\n*{\n    font-family: 'Quicksand', 'sans-serif';\n}\na , a:hover, a:focus, a:active{\n    color:black;\n}\n\n.info, .bio, .contact, .support, .podcasts{\n    font-size:calc(.8vw + 1vh + .5vmin);\n}\n\n.warning{\n    font-size:large;\n}\na span {\n    height: 1px;\n    width: 1px;\n    position: absolute;\n    overflow: hidden;\n    top: -10px;\n  }\n\n.row, .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2,  .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto{\n    margin:0;\n    padding: 0;\n}\n\nh4, h5{\n    margin: 20px 0 10px ;\n}\n\n\nnav a, nav a:hover, nav a:focus, nav a:active{\n    text-decoration: none;\n    color: black;\n    cursor: pointer;\n    text-align: center;\n    margin:auto;\n}\n.menuButton{\n    display:none;\n}\n\n/* Style all font awesome icons */\n.fa {\n    padding: 10px 10px;\n    border: 2px transparent solid;\n    border-radius:50% 0;\n    font-size: 30px;\n    width: 50px;\n    height: 52px;\n    text-decoration: none;\n    vertical-align: middle;\n    margin: 0 10px;\n    transition: all .5s ease;\n  }\n  \n  /* Add a hover effect if you want */\n  .fa:hover {\n    background: black;\n    color: white;\n    border: 2px white solid;\n    text-decoration: none;\n    border-radius: 0 50%;\n\n  }\n  \n  /* Set a specific color for each brand */\n  \n  /* Facebook */\n  .fa-facebook {\n    padding: 10px 15px;\n    background: #3B5998;\n    color: white;\n  }\n  \n  .fa-github {\n    background-color: #68378e;\n    color: white;\n    padding-top: 10px;\n  }\n  \n  .fa-instagram {\n    height: 52px;\n    padding: 0 3px;\n    border: 2px transparent solid;\n    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);\n    background-color: black;\n    -webkit-background-clip: text;\n    /* Also define standard property for compatibility */\n    -webkit-text-fill-color: transparent;\n    font-size: 45px; /* change this to change the size*/\n  }\n  \n  .fa-instagram:hover {\n    -webkit-text-fill-color: white;\n    padding-top: 0;\n  }\n  \n  .fa-file {\n    padding: auto;\n    border: transparent;\n    width: auto;\n    height: auto;\n    text-decoration: none;\n    vertical-align: auto;\n    margin: auto;\n    transition: all .5s ease;\n  }\n  \n  .fa-linkedin {\n    background: #0177b5;\n    color: white;\n  }\n  \n  /* Twitter */\n  .fa-twitter {\n    background: #55ACEE;\n    color: white;\n  }\n\nh3{\n    font-family: 'Roboto', 'sans-serif';\n}\n\n#search{\n    margin: 5px 20px;\n    width: 100%;\n}\n.logo{\n    font-family: 'Arvo', \"serif\";\n    font-size: calc(8vw + 1vh + .5vmin);\n    text-align: center;\n    margin: 10px auto;\n\n}\n\n.logo-subtitle{\n    display: block;\n    font-family: 'Arvo', \"serif\";\n    font-size: calc(1vw + 1vh + .5vmin);\n    text-align: center;\n    margin: 10px auto; \n}\n\n.img-expanded{\n    display: block;\n    margin: 10%;\n    border-radius: 0;\n    width: 80%;\n}\n\n.img-thumb{\n    border-radius: 20px 0 0 20px;\n    width: 150px;\n    height: 150px;\n}\n\n.completed-expanded{\n    display: block;\n    margin: 0 10% 20px 10%;\n    text-align: center;\n    font-size: calc(1.5vw + 1vh + .5vmin);\n}\n\n\n.description{\n    display:none;\n    margin:0;\n    font-size: calc(1vw + 1vh + .5vmin);\n}\n\n.episode{\n    margin:40px 0;\n    background-color: #E0F2FF;\n    border-radius:20px;\n}\n\n.episode-expanded{\n    margin:40px 0;\n    background-color: #E0F2FF;\n    border-radius:20px;\n}\n\n\n.episode-info{\n    padding: 10px;\n}\n\n.expanded{\n    width: 100%;\n    display: -webkit-box;\n    margin-top: 0;\n    overflow: hidden;\n    text-overflow: initial;\n    -webkit-line-clamp: initial;\n    -webkit-box-orient: initial;\n    max-height: initial;\n    min-height: 120px;\n}\n\n.hideorshow{\n    margin: 0 auto 5px auto;\n    text-align: center;\n    font-size: medium;\n}\n\n.filters{\n    margin:auto\n}\n#sticky{\n    top:0 ;\n    position:sticky;\n    background-color: white;\n    z-index: 1;\n}\n.btn {\n    cursor: pointer;\n\tposition: relative;\n\tborder: 0;\n    padding: 5px 15px;\n    margin: 7px 10px 10px;\n\tdisplay: inline-block;\n\ttext-align: center;\n    color: black;\n    background-color: #CA9AFF;\n    transition: all 1s;\n}\n.btn:active {\n    top: 4px;\t\n    margin: 0 10px; \n}\n\n.btn-signup{\n    cursor: pointer;\n\tposition: relative;\n\tborder: 0;\n    padding: 5px 15px;\n    margin: 7px 10px 10px;\n\tdisplay: inline-block;\n    text-align: center;\n    font-size: calc(.7vw + 1vh + .5vmin);\n    color: black;\n    background-color: #83bffd;\n    transition: all 1s;\n}\n.btn-signup:active {\n    top: 4px;\t\n    margin: 0 10px; \n}\n\n.btn-small{\n    font-size: large;\n}\n\n\n.name{\n    font-weight: bold;\n    font-size: calc(1.5vw + 1vh + .5vmin);\n    margin: 0;\n}\n\n.name-expanded{\n    padding-top: 15px;\n    font-weight: bold;\n    font-size: calc(1.5vw + 1vh + .5vmin);\n    margin: 0;\n    overflow: hidden;\n}\n\n.hidden{\n    display: none;\n}\n\n.select-alternative{\n    -webkit-appearance: menulist-button;\n   height: 35px;\n}\n.no-margin{\n    border-radius: 0 0 20px 20px;\n}\n\n#cool-hover{\n    padding: 50px 0 0 0 ;\n    margin: 0;\n}\n\n#cool-hover:hover{\n    animation: bounce 1s;\n    cursor: pointer;\n}\n\n#filterarrow{\n    padding: 0;\n    margin: 0;\n}\n\n#filterarrow:hover{\n    animation: bounce 1s;\n    cursor: pointer;\n}\n\n\n@keyframes bounce {\n\t0%, 20%, 60%, 100% {\n\t\t-webkit-transform: translateY(0);\n\t\ttransform: translateY(0);\n\t}\n\n\t40% {\n\t\t-webkit-transform: translateY(-10px);\n\t\ttransform: translateY(-10px);\n\t}\n\n\t80% {\n\t\t-webkit-transform: translateY(-5px);\n\t\ttransform: translateY(-5px);\n\t}\n}\n\n.number, .completed{\n    margin: auto;\n    text-align: center;\n    font-size: medium;\n}\n\n\n\n\n#episodeBody{\n    margin: 0px 50px 10px;\n}\n\n.menu {\n    font-size: calc(1vw + 1vh + .5vmin);\n    margin: 0 -50px 10px;\n    padding: 10px 60px;\n    background-image: linear-gradient(#dcdcdc, #dcdcdc 10%, transparent);\n    text-align: center;\n}\n\n\n@media only screen and (max-width: 1000px) {\n    .menuButton{\n        display: initial;\n    }\n    .menu-item, .menuButton{\n       font-size:calc(2vw + 1vh + .5vmin);\n    }\n}\n\n@media only screen and (max-width: 800px) {\n\n    #cool-hover{\n        margin: 0;\n    }\n    .name-expanded{\n        font-size: large\n    }\n    .completed{\n        font-size: small\n    }\n    .description, .completed-message, .completed-expanded{\n        font-size: medium;\n    }\n}\n\n@media only screen and (max-width: 700px) {\n    #cool-hover {\n        padding: 30px 0 0 0;\n        margin: 0;\n    }\n    #episodeBody{\n        margin: 0 10px;\n    }\n\n    .menu {\n        margin: 0 -10px 10px;\n    }\n    \n\n    .episode{\n        margin: 30px 0;\n    }\n    .img-thumb{\n        border-radius: 20px 0 0 20px;\n        width: 100px;\n        height: 100px;\n    }\n\n}\n@media only screen and (max-width: 450px) {\n    #cool-hover {\n        padding: 20px 0 0 0;\n        margin: 0;\n    }\n    .name{\n        font-size: small;\n    }\n    .img-thumb{\n        border-radius: 20px 0 0 20px;\n        width: 80px;\n        height: 80px;\n    }\n}", ""]);
+exports.push([module.i, "\n*{\n    font-family: 'Quicksand', 'sans-serif';\n}\na , a:hover, a:focus, a:active{\n    color:black;\n}\n\n.info, .bio, .contact, .support, .podcasts{\n    font-size:calc(.8vw + 1vh + .5vmin);\n}\n\n.transcript_progress{\n    font-size: x-large;\n}\n\n.t_progressgreen, .t_progressyellow, .t_progressred{\n    display: inline;\n    font-size:large;\n}\n\n.t_progressred{\n    border-radius: 50%;\n    background-color: #c41465;\n    margin: 10px;\n    width: 50px;\n    height: 50px;\n    padding: 11px 10px;\n    float:left;\n}\n.t_progressred a {\n    font-weight: bold;\n    color:white;\n    text-align:center;\n    font-family: 'Roboto Mono',\"sans-serif\"\n}\n\n.t_progressyellow{\n    border-radius: 50%;\n    background-color: #EEAB00;\n    margin: 10px;\n    width: 50px;\n    height: 50px;\n    padding: 11px 10px;\n    float:left;\n}\n.t_progressyellow a{\n    font-weight:bold;\n    text-align:center;\n    font-family: 'Roboto Mono',\"sans-serif\"\n}\n\n.t_progressgreen{\n    border-radius: 50%;\n    background-color: #2EA300;\n    margin: 10px;\n    width: 50px;\n    height: 50px;\n    padding: 11px 10px;\n    float:left;\n}\n.t_progressgreen a{\n    color:white;\n    font-weight:bold;\n    text-align:center;\n    font-family: 'Roboto Mono',\"sans-serif\"\n}\n\n.warning{\n    font-size:large;\n}\na span {\n    height: 1px;\n    width: 1px;\n    position: absolute;\n    overflow: hidden;\n    top: -10px;\n  }\n\n.row, .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2,  .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto{\n    margin:0;\n    padding: 0;\n}\n\nh4, h5{\n    margin: 20px 0 10px ;\n}\n\n\nnav a, nav a:hover, nav a:focus, nav a:active{\n    text-decoration: none;\n    color: black;\n    cursor: pointer;\n    text-align: center;\n    margin:auto;\n}\n\n.menu-item{\n    cursor:pointer;\n}\n.menuButton{\n    display:none;\n}\n\n/* Style all font awesome icons */\n.fa {\n    padding: 10px 10px;\n    border: 2px transparent solid;\n    border-radius:50% 0;\n    font-size: 30px;\n    width: 50px;\n    height: 52px;\n    text-decoration: none;\n    vertical-align: middle;\n    margin: 0 10px;\n    transition: all .5s ease;\n  }\n  \n  /* Add a hover effect if you want */\n  .fa:hover {\n    background: black;\n    color: white;\n    border: 2px white solid;\n    text-decoration: none;\n    border-radius: 0 50%;\n\n  }\n  \n  /* Set a specific color for each brand */\n  \n  /* Facebook */\n  .fa-facebook {\n    padding: 10px 15px;\n    background: #3B5998;\n    color: white;\n  }\n  \n  .fa-github {\n    background-color: #68378e;\n    color: white;\n    padding-top: 10px;\n  }\n  \n  .fa-instagram {\n    height: 52px;\n    padding: 0 3px;\n    border: 2px transparent solid;\n    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);\n    background-color: black;\n    -webkit-background-clip: text;\n    /* Also define standard property for compatibility */\n    -webkit-text-fill-color: transparent;\n    font-size: 45px; /* change this to change the size*/\n  }\n  \n  .fa-instagram:hover {\n    -webkit-text-fill-color: white;\n    padding-top: 0;\n  }\n  \n  .fa-file {\n    padding: auto;\n    border: transparent;\n    width: auto;\n    height: auto;\n    text-decoration: none;\n    vertical-align: auto;\n    margin: auto;\n    transition: all .5s ease;\n  }\n  \n  .fa-linkedin {\n    background: #0177b5;\n    color: white;\n  }\n  \n  /* Twitter */\n  .fa-twitter {\n    background: #55ACEE;\n    color: white;\n  }\n\nh3{\n    font-family: 'Roboto', 'sans-serif';\n}\n\n#search{\n    margin: 5px 20px;\n    width: 100%;\n}\n.logo{\n    font-family: 'Arvo', \"serif\";\n    font-size: calc(8vw + 1vh + .5vmin);\n    text-align: center;\n    margin: 10px auto;\n\n}\n\n.logo-subtitle{\n    display: block;\n    font-family: 'Arvo', \"serif\";\n    font-size: calc(1vw + 1vh + .5vmin);\n    text-align: center;\n    margin: 10px auto; \n}\n\n.img-expanded{\n    display: block;\n    margin: 10%;\n    border-radius: 0;\n    width: 80%;\n}\n\n.img-thumb{\n    border-radius: 20px 0 0 20px;\n    width: 150px;\n    height: 150px;\n}\n\n.completed-expanded{\n    display: block;\n    margin: 0 10% 20px 10%;\n    text-align: center;\n    font-size: calc(1.5vw + 1vh + .5vmin);\n}\n\n\n.description{\n    display:none;\n    margin:0;\n    font-size: calc(1vw + 1vh + .5vmin);\n}\n\n.episode{\n    margin:40px 0;\n    background-color: #E0F2FF;\n    border-radius:20px;\n}\n\n.episode-expanded{\n    margin:40px 0;\n    background-color: #E0F2FF;\n    border-radius:20px;\n}\n\n\n.episode-info{\n    padding: 10px;\n}\n\n.expanded{\n    width: 100%;\n    display: -webkit-box;\n    margin-top: 0;\n    overflow: hidden;\n    text-overflow: initial;\n    -webkit-line-clamp: initial;\n    -webkit-box-orient: initial;\n    max-height: initial;\n    min-height: 120px;\n}\n\n.hideorshow{\n    margin: 0 auto 5px auto;\n    text-align: center;\n    font-size: medium;\n}\n\n.filters{\n    margin:auto\n}\n#sticky{\n    top:0 ;\n    position:sticky;\n    background-color: white;\n    z-index: 1;\n}\n.btn {\n    cursor: pointer;\n\tposition: relative;\n\tborder: 0;\n    padding: 5px 15px;\n    margin: 7px 10px 10px;\n\tdisplay: inline-block;\n\ttext-align: center;\n    color: black;\n    background-color: #CA9AFF;\n    transition: all 1s;\n}\n.btn:active {\n    top: 4px;\t\n    margin: 0 10px; \n}\n\n.btn-signup{\n    cursor: pointer;\n\tposition: relative;\n\tborder: 0;\n    padding: 5px 15px;\n    margin: 7px 10px 10px;\n\tdisplay: inline-block;\n    text-align: center;\n    font-size: calc(.7vw + 1vh + .5vmin);\n    color: black;\n    background-color: #83bffd;\n    transition: all 1s;\n}\n.btn-signup:active {\n    top: 4px;\t\n    margin: 0 10px; \n}\n\n.btn-small{\n    font-size: large;\n}\n\n\n.name{\n    font-weight: bold;\n    font-size: calc(1.5vw + 1vh + .5vmin);\n    margin: 0;\n}\n\n.name-expanded{\n    padding-top: 15px;\n    font-weight: bold;\n    font-size: calc(1.5vw + 1vh + .5vmin);\n    margin: 0;\n    overflow: hidden;\n}\n\n.hidden{\n    display: none;\n}\n\n.select-alternative{\n    -webkit-appearance: menulist-button;\n   height: 35px;\n}\n.no-margin{\n    border-radius: 0 0 20px 20px;\n}\n\n#cool-hover{\n    padding: 50px 0 0 0 ;\n    margin: 0;\n}\n\n#cool-hover:hover{\n    animation: bounce 1s;\n    cursor: pointer;\n}\n\n#filterarrow{\n    padding: 0;\n    margin: 0;\n}\n\n#filterarrow:hover{\n    animation: bounce 1s;\n    cursor: pointer;\n}\n\n\n@keyframes bounce {\n\t0%, 20%, 60%, 100% {\n\t\t-webkit-transform: translateY(0);\n\t\ttransform: translateY(0);\n\t}\n\n\t40% {\n\t\t-webkit-transform: translateY(-10px);\n\t\ttransform: translateY(-10px);\n\t}\n\n\t80% {\n\t\t-webkit-transform: translateY(-5px);\n\t\ttransform: translateY(-5px);\n\t}\n}\n\n.number, .completed{\n    margin: auto;\n    text-align: center;\n    font-size: medium;\n}\n\n\n\n\n#episodeBody{\n    margin: 0px 50px 10px;\n}\n\n.menu {\n    font-size: calc(1vw + 1vh + .5vmin);\n    margin: 0 -50px 10px;\n    padding: 10px 60px;\n    background-image: linear-gradient(#dcdcdc, #dcdcdc 10%, transparent);\n    text-align: center;\n}\n\n\n@media only screen and (max-width: 1000px) {\n    .menuButton{\n        display: initial;\n    }\n    .menu-item, .menuButton{\n       font-size:calc(2vw + 1vh + .5vmin);\n    }\n}\n\n@media only screen and (max-width: 800px) {\n\n    #cool-hover{\n        margin: 0;\n    }\n    .name-expanded{\n        font-size: large\n    }\n    .completed{\n        font-size: small\n    }\n    .description, .completed-message, .completed-expanded{\n        font-size: medium;\n    }\n    \n}\n\n@media only screen and (max-width: 700px) {\n    #cool-hover {\n        padding: 30px 0 0 0;\n        margin: 0;\n    }\n    #episodeBody{\n        margin: 0 10px;\n    }\n    .transcript_progress{\n        font-size:large;\n    }\n    .menu {\n        margin: 0 -10px 10px;\n    }\n    \n    .menu-item, .menuButton{\n        font-size:calc(3vw + 1vh + .5vmin);\n     }\n\n    .episode{\n        margin: 30px 0;\n    }\n    .img-thumb{\n        border-radius: 20px 0 0 20px;\n        width: 100px;\n        height: 100px;\n    }\n\n}\n@media only screen and (max-width: 450px) {\n    #cool-hover {\n        padding: 20px 0 0 0;\n        margin: 0;\n    }\n    .btn{\n        font-size:small;\n    }\n    .name{\n        font-size: small;\n    }\n    .img-thumb{\n        border-radius: 20px 0 0 20px;\n        width: 80px;\n        height: 80px;\n    }\n}", ""]);
 
 // exports
 
@@ -28457,7 +28586,7 @@ module.exports = function (css) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__fortawesome_fontawesome_svg_core__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__fortawesome_react_fontawesome__ = __webpack_require__(18);
@@ -28467,7 +28596,7 @@ module.exports = function (css) {
 
 
 
-__WEBPACK_IMPORTED_MODULE_1__fortawesome_fontawesome_svg_core__["b" /* library */].add(__WEBPACK_IMPORTED_MODULE_3__fortawesome_free_solid_svg_icons__["a" /* faCheckCircle */], __WEBPACK_IMPORTED_MODULE_3__fortawesome_free_solid_svg_icons__["d" /* faClock */]);
+__WEBPACK_IMPORTED_MODULE_1__fortawesome_fontawesome_svg_core__["b" /* library */].add(__WEBPACK_IMPORTED_MODULE_3__fortawesome_free_solid_svg_icons__["a" /* faCheckCircle */], __WEBPACK_IMPORTED_MODULE_3__fortawesome_free_solid_svg_icons__["e" /* faClock */]);
 
 class Episode extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
     constructor(props) {
@@ -28515,7 +28644,7 @@ class Episode extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
             completedColor = "#2EA300";
             completedMessage = "Completed Transcript Available";
         }
-        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', null, !this.state.displayAll ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { key: `${id}-episode-id`, className: 'row episode' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'col-xs-2' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'img-thumb img-fluid', src: __webpack_require__(42), alt: 'My Brother, My Brother and Me Logo' })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'col-7 col-lg-9' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'episode-info' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h3', { className: 'row name text-truncate' }, EpisodeTitle)), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { id: 'cool-hover', className: 'row col-12', onClick: this.showMoreorLess }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__fortawesome_react_fontawesome__["a" /* FontAwesomeIcon */], { className: 'hideorshow', icon: this.state.moreOrLess === "+" ? "chevron-down" : "chevron-up", 'vertical-align': 'middle' }))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { id: `${id}-completed`, className: 'completed col-1' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__fortawesome_react_fontawesome__["a" /* FontAwesomeIcon */], { icon: completedIcon,
+        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { id: EpisodeNumber }, !this.state.displayAll ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { key: `${id}-episode-id`, className: 'row episode' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'col-xs-2' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'img-thumb img-fluid', src: __webpack_require__(42), alt: 'My Brother, My Brother and Me Logo' })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'col-7 col-lg-9' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'episode-info' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h3', { className: 'row name text-truncate' }, EpisodeTitle)), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { id: 'cool-hover', className: 'row col-12', onClick: this.showMoreorLess }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__fortawesome_react_fontawesome__["a" /* FontAwesomeIcon */], { className: 'hideorshow', icon: this.state.moreOrLess === "+" ? "chevron-down" : "chevron-up", 'vertical-align': 'middle' }))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { id: `${id}-completed`, className: 'completed col-1' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__fortawesome_react_fontawesome__["a" /* FontAwesomeIcon */], { icon: completedIcon,
             color: completedColor, size: '2x', 'vertical-align': 'middle' }))) : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { key: `${id}-episode-id`, className: 'row episode-expanded' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'row' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'col-md-4' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'img-expanded row center-block', src: __webpack_require__(43), alt: 'My Brother, My Brother and Me Logo' }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { id: `${id}-completed`, className: 'completed-expanded row' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__fortawesome_react_fontawesome__["a" /* FontAwesomeIcon */], { icon: completedIcon,
             color: completedColor, size: '2x', 'vertical-align': 'middle' }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'completed-message' }, completedMessage), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('button', { className: this.state.completed === "0" ? "btn-signup btn-primary" : "hidden", 'data-toggle': 'modal', 'data-target': '#emailModal' }, this.state.completed === "0" ? "Request Transcript" : "Fix up Raw Transcript"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('button', { className: this.state.completed === "1" || this.state.completed === "2" ? "btn-signup btn-primary" : "hidden", 'data-toggle': 'modal', 'data-target': '#downloadModal' }, this.state.completed === "1" || this.state.completed === "2" ? "Download Raw Transcript" : ""), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('button', { className: this.state.completed === "2" ? "btn-signup btn-primary" : "hidden", 'data-toggle': 'modal', 'data-target': '#downloadModal' }, this.state.completed === "2" ? "Download Completed Transcript" : ""), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'modal fade', id: 'emailModal', role: 'dialog', 'aria-labelledby': 'emailModalLabel', 'aria-hidden': 'true' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'modal-dialog', role: 'document' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'modal-content' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'modal-header' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h5', { className: 'modal-title', id: 'emailModalLabel' }, 'Sign Up'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('button', { type: 'button', className: 'close', 'data-dismiss': 'modal', 'aria-label': 'Close' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span', { 'aria-hidden': 'true' }, '\xD7'))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'modal-body' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('form', { action: 'https://formspree.io/podscriptfyi@gmail.com', method: 'POST' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'form-group' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'hidden', name: '_subject', id: '_subject', value: this.state.completed === "0" ? "Someone is requesting a transcript" : "Someone wants to work on episode" }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'text', name: '_gotcha', className: 'hidden' }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'col' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('label', { className: 'col-sm-2 description' }, 'Name: '), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'text', name: 'name', id: 'name', placeholder: 'Your Name', className: 'form-control' }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null)), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'col' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('label', { className: 'col-sm-2 description' }, 'Email: '), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'email', name: 'email', placeholder: 'Your Email', className: 'form-control', id: 'email' }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null)), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'col' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('label', { className: 'col-sm-5 description' }, 'Reason for Contact: '), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('textarea', { name: 'message', placeholder: 'Message', className: 'form-control', id: 'reason', rows: '5',
             defaultValue: this.state.completed === "0" ? "Please upload " + EpisodeNumber + " of MBMBaM!" : "I'd like to sign up to help transcribe: Episode (FILL IN EPISODE NUMBER HERE) of MBMBaM!" }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null)), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('button', { type: 'submit', className: 'btn btn-primary', value: 'Send' }, 'Send'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('button', { type: 'button', className: 'btn btn-secondary', 'data-dismiss': 'modal' }, 'Close'))))))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'modal fade', id: 'downloadModal', role: 'dialog', 'aria-labelledby': 'downloadModalLabel', 'aria-hidden': 'true' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'modal-dialog', role: 'document' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'modal-content' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'modal-header' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h5', { className: 'modal-title', id: 'downloadModalLabel' }, 'Download'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('button', { type: 'button', className: 'close', 'data-dismiss': 'modal', 'aria-label': 'Close' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span', { 'aria-hidden': 'true' }, '\xD7'))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'modal-body' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'warning' }, 'If you\'re downloading a raw transcript, be aware that the speaker\'s names may not be labeled correctly and there may be errors in the transcription. If you\'d like to help fix these up, and provide a clean transcript for people to download, sign up here:'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('button', { className: 'btn-signup btn-primary btn-small', 'data-dismiss': 'modal', 'data-toggle': 'modal', 'data-target': '#emailModal' }, 'Fix up Raw Transcript'), ' '), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('button', { className: 'btn-signup btn-primary' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a', { href: EpisodeRawTranscript }, 'Download Raw Transcript')), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('button', { className: this.state.completed === "2" ? "btn-signup btn-primary" : "hidden" }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a', { href: EpisodeCompletedTranscript }, 'Download Completed Transcript'))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('button', { type: 'button', className: 'btn btn-secondary', 'data-dismiss': 'modal' }, 'Close')))))))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'episode-info col-md-7' }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h3', { className: 'row name-expanded' }, EpisodeTitle), EpisodeNumber === "420" ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'img-expanded row center-block', src: __webpack_require__(44), alt: 'Griffin shushing seductively' }) : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'description row expanded' }, EpisodeDescription))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { id: 'cool-hover', className: 'row col-md-12 padding-top', onClick: this.showMoreorLess }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__fortawesome_react_fontawesome__["a" /* FontAwesomeIcon */], { className: 'hideorshow', icon: this.state.moreOrLess === "+" ? "chevron-down" : "chevron-up", 'vertical-align': 'middle' }))));
@@ -29211,7 +29340,40 @@ module.exports = __webpack_require__.p + "a562fdf5eed483ef303471e095aae625.jpg";
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_firebase__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+
+
+class EpisodeProgress extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
+
+    render() {
+        const { TranscriptionProgress, EpisodeNumber, Completed } = this.props;
+        var ep_number = EpisodeNumber;
+        if (EpisodeNumber.length < 3) {
+            ep_number = "0" + ep_number;
+        }
+        if (EpisodeNumber.length < 2) {
+            ep_number = "0" + ep_number;
+        }
+
+        if (TranscriptionProgress === "0" && Completed !== "2") {
+            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "t_progressred" }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", { href: "#" + (parseInt(EpisodeNumber) + 1) }, ep_number));
+        } else if (TranscriptionProgress === "1" && Completed !== "2") {
+            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "t_progressyellow" }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", { href: "#" + (parseInt(EpisodeNumber) + 1) }, ep_number));
+        } else {
+            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "t_progressgreen" }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", { href: "#" + (parseInt(EpisodeNumber) + 1) }, ep_number));
+        }
+    }
+}
+
+/* harmony default export */ __webpack_exports__["a"] = (EpisodeProgress);
+
+/***/ }),
+/* 46 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_firebase__ = __webpack_require__(47);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_firebase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_firebase__);
 
 const config = {
@@ -29226,7 +29388,7 @@ __WEBPACK_IMPORTED_MODULE_0_firebase___default.a.initializeApp(config);
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_firebase___default.a);
 
 /***/ }),
-/* 46 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29234,14 +29396,14 @@ __WEBPACK_IMPORTED_MODULE_0_firebase___default.a.initializeApp(config);
 
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
-__webpack_require__(47);
-var firebase = _interopDefault(__webpack_require__(1));
-__webpack_require__(52);
+__webpack_require__(48);
+var firebase = _interopDefault(__webpack_require__(2));
 __webpack_require__(53);
-__webpack_require__(55);
-__webpack_require__(58);
-__webpack_require__(60);
-__webpack_require__(62);
+__webpack_require__(54);
+__webpack_require__(56);
+__webpack_require__(59);
+__webpack_require__(61);
+__webpack_require__(63);
 
 /**
  * Copyright 2017 Google Inc.
@@ -29360,12 +29522,12 @@ module.exports = firebase;
 
 
 /***/ }),
-/* 47 */
+/* 48 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* WEBPACK VAR INJECTION */(function(setImmediate, global) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_whatwg_fetch__ = __webpack_require__(50);
+/* WEBPACK VAR INJECTION */(function(setImmediate, global) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_whatwg_fetch__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_whatwg_fetch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_whatwg_fetch__);
 
 
@@ -30897,10 +31059,10 @@ var iterator = _wksExt.f('iterator');
  * limitations under the License.
  */
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(48).setImmediate, __webpack_require__(3)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(49).setImmediate, __webpack_require__(3)))
 
 /***/ }),
-/* 48 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {var scope = (typeof global !== "undefined" && global) ||
@@ -30956,7 +31118,7 @@ exports._unrefActive = exports.active = function(item) {
 };
 
 // setimmediate attaches itself to the global object
-__webpack_require__(49);
+__webpack_require__(50);
 // On some exotic environments, it's not clear which object `setimmediate` was
 // able to install onto.  Search each possibility in the same order as the
 // `setimmediate` library.
@@ -30970,7 +31132,7 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 49 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
@@ -31163,7 +31325,7 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3), __webpack_require__(0)))
 
 /***/ }),
-/* 50 */
+/* 51 */
 /***/ (function(module, exports) {
 
 (function(self) {
@@ -31635,7 +31797,7 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 
 
 /***/ }),
-/* 51 */
+/* 52 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -31840,12 +32002,12 @@ function __importDefault(mod) {
 
 
 /***/ }),
-/* 52 */
+/* 53 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__firebase_app__ = __webpack_require__(1);
+/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__firebase_app__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__firebase_app___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__firebase_app__);
 (function() {var g,aa=aa||{},k=this;function l(a){return"string"==typeof a}function ba(a){return"boolean"==typeof a}function ca(){}
 function da(a){var b=typeof a;if("object"==b)if(a){if(a instanceof Array)return"array";if(a instanceof Object)return b;var c=Object.prototype.toString.call(a);if("[object Window]"==c)return"object";if("[object Array]"==c||"number"==typeof a.length&&"undefined"!=typeof a.splice&&"undefined"!=typeof a.propertyIsEnumerable&&!a.propertyIsEnumerable("splice"))return"array";if("[object Function]"==c||"undefined"!=typeof a.call&&"undefined"!=typeof a.propertyIsEnumerable&&!a.propertyIsEnumerable("call"))return"function"}else return"null";
@@ -32165,7 +32327,7 @@ c){a=new Xl(a);c({INTERNAL:{getUid:r(a.getUid,a),getToken:r(a.bc,a),addAuthToken
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(3)))
 
 /***/ }),
-/* 53 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32177,8 +32339,8 @@ function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'defau
 
 var util = __webpack_require__(11);
 var logger = __webpack_require__(20);
-var tslib_1 = __webpack_require__(54);
-var firebase = _interopDefault(__webpack_require__(1));
+var tslib_1 = __webpack_require__(55);
+var firebase = _interopDefault(__webpack_require__(2));
 
 /**
  * Copyright 2017 Google Inc.
@@ -47525,7 +47687,7 @@ exports.OnDisconnect = OnDisconnect;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 54 */
+/* 55 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -47730,7 +47892,7 @@ function __importDefault(mod) {
 
 
 /***/ }),
-/* 55 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47740,10 +47902,10 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
-var firebase = _interopDefault(__webpack_require__(1));
+var firebase = _interopDefault(__webpack_require__(2));
 var logger = __webpack_require__(20);
-var tslib_1 = __webpack_require__(56);
-var webchannelWrapper = __webpack_require__(57);
+var tslib_1 = __webpack_require__(57);
+var webchannelWrapper = __webpack_require__(58);
 
 /**
  * Copyright 2017 Google Inc.
@@ -67945,7 +68107,7 @@ exports.registerFirestore = registerFirestore;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 56 */
+/* 57 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -68150,7 +68312,7 @@ function __importDefault(mod) {
 
 
 /***/ }),
-/* 57 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {(function() {var g,goog=goog||{},k=this;function l(a){return"string"==typeof a}function n(a,b){a=a.split(".");b=b||k;for(var c=0;c<a.length;c++)if(b=b[a[c]],null==b)return null;return b}function aa(){}
@@ -68260,7 +68422,7 @@ T.prototype.getStatus=T.prototype.W;T.prototype.getStatusText=T.prototype.Ha;T.p
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 58 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68270,8 +68432,8 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
-var tslib_1 = __webpack_require__(59);
-var firebase = _interopDefault(__webpack_require__(1));
+var tslib_1 = __webpack_require__(60);
+var firebase = _interopDefault(__webpack_require__(2));
 
 /**
  * Copyright 2017 Google Inc.
@@ -68817,7 +68979,7 @@ exports.registerFunctions = registerFunctions;
 
 
 /***/ }),
-/* 59 */
+/* 60 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -69022,7 +69184,7 @@ function __importDefault(mod) {
 
 
 /***/ }),
-/* 60 */
+/* 61 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -69031,8 +69193,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isSupported", function() { return isSupported; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__firebase_util__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__firebase_util___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__firebase_util__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_tslib__ = __webpack_require__(61);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__firebase_app__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_tslib__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__firebase_app__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__firebase_app___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__firebase_app__);
 
 
@@ -71155,7 +71317,7 @@ function isSWControllerSupported() {
 
 
 /***/ }),
-/* 61 */
+/* 62 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -71359,13 +71521,13 @@ function __importDefault(mod) {
 
 
 /***/ }),
-/* 62 */
+/* 63 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "registerStorage", function() { return registerStorage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__firebase_app__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__firebase_app__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__firebase_app___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__firebase_app__);
 
 
@@ -74823,7 +74985,7 @@ registerStorage(__WEBPACK_IMPORTED_MODULE_0__firebase_app___default.a);
 
 
 /***/ }),
-/* 63 */
+/* 64 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
